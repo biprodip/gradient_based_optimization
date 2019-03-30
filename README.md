@@ -86,5 +86,9 @@ Implement RMSPROP algorithm, which use squared gradients to adjust learning rate
 <!-- $$ w_j^t = w_j^{t-1} - \dfrac{\eta}{\sqrt{G_j^t + \varepsilon}} g_{tj} $$-->
 
 ![Equation 09](http://latex.codecogs.com/gif.latex?%5Cinline%20G_j%5Et%20%3D%20%5Calpha%20G_j%5E%7Bt-1%7D%20&plus;%20%281%20-%20%5Calpha%29%20g_%7Btj%7D%5E2)
+</p>
+
+<p style="text-align: center;">
+<br>
 ![Equation 10](http://latex.codecogs.com/gif.latex?%5Cinline%20w_j%5Et%20%3D%20w_j%5E%7Bt-1%7D%20%20%5Cdfrac%7B%5Ceta%7D%7B%5Csqrt%7BG_j%5Et%20&plus;%20%5Cvarepsilon%7D%7D%20g_%7Btj%7D)
 </p>
