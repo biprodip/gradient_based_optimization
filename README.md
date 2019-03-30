@@ -56,7 +56,6 @@ Stochastic gradient descent just takes a random batch of $m$ samples on each ite
 
 Momentum is a method that helps accelerate SGD in the relevant direction and dampens oscillations as can be seen in image below. It does this by adding a fraction $\alpha$ of the update vector of the past time step to the current update vector.
 <br>
-<br>
 <!-- $$ \nu_t = \alpha \nu_{t-1} + \eta\dfrac{1}{m} \sum_{j=1}^m \nabla_w l(x_{i_j}, y_{i_j}, w_t) $$ -->
 <!-- $$ w_t = w_{t-1} - \nu_t$$-->
 
@@ -64,8 +63,6 @@ Momentum is a method that helps accelerate SGD in the relevant direction and dam
 <br>
 ![Equation 8](http://latex.codecogs.com/gif.latex?%5Cinline%20w_t%20%3D%20w_%7Bt-1%7D%20-%20%5Cnu_t)
 
-
-<br>
 
 ## RMSprop
 
