@@ -10,15 +10,14 @@ To make things more intuitive, let's solve a 2D classification problem with synt
 ## Logistic regression
 
 To classify objects we will obtain probability of object belongs to class '1'. To predict probability we will use output of linear model and logistic function:
-
+<p style="text-align: center;">
 <!-- $$ a(x; w) = \langle w, x \rangle $$ -->
 <!--$$ $$ -->
-
 <br>
 
 ![Eqn1](http://latex.codecogs.com/gif.latex?a%28x%3B%20w%29%20%3D%20%5Clangle%20w%2C%20x%20%5Crangle)
 ![Eqn2](http://latex.codecogs.com/gif.latex?%5Cinline%20P%28%20y%3D1%20%5C%3B%20%5Cbig%7C%20%5C%3B%20x%2C%20%5C%2C%20w%29%20%3D%20%5Cdfrac%7B1%7D%7B1%20&plus;%20%5Cexp%28-%20%5Clangle%20w%2C%20x%20%5Crangle%29%7D%20%3D%20%5Csigma%28%5Clangle%20w%2C%20x%20%5Crangle%29)
-
+</p>
 
 In logistic regression the optimal parameters w are found by cross-entropy minimization:
 
