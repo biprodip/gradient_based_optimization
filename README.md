@@ -11,15 +11,23 @@ To make things more intuitive, let's solve a 2D classification problem with synt
 
 To classify objects we will obtain probability of object belongs to class '1'. To predict probability we will use output of linear model and logistic function:
 
-$$ a(x; w) = \langle w, x \rangle $$
-$$ P( y=1 \; \big| \; x, \, w) = \dfrac{1}{1 + \exp(- \langle w, x \rangle)} = \sigma(\langle w, x \rangle)$$
+<!-- $$ a(x; w) = \langle w, x \rangle $$ -->
+<!--$$ $$ -->
+
+![Eqn1](http://latex.codecogs.com/gif.latex?a%28x%3B%20w%29%20%3D%20%5Clangle%20w%2C%20x%20%5Crangle)
+![Eqn2](http://latex.codecogs.com/gif.latex?%5Cinline%20P%28%20y%3D1%20%5C%3B%20%5Cbig%7C%20%5C%3B%20x%2C%20%5C%2C%20w%29%20%3D%20%5Cdfrac%7B1%7D%7B1%20&plus;%20%5Cexp%28-%20%5Clangle%20w%2C%20x%20%5Crangle%29%7D%20%3D%20%5Csigma%28%5Clangle%20w%2C%20x%20%5Crangle%29)
 
 
 In logistic regression the optimal parameters $w$ are found by cross-entropy minimization:
 
-Loss for one sample: $$ l(x_i, y_i, w) = - \left[ {y_i \cdot log P(y_i = 1 \, | \, x_i,w) + (1-y_i) \cdot log (1-P(y_i = 1\, | \, x_i,w))}\right] $$
+Loss for one sample: 
 
-Loss for many samples: $$ L(X, \vec{y}, w) =  {1 \over \ell} \sum_{i=1}^\ell l(x_i, y_i, w) $$
+<!-- $$ l(x_i, y_i, w) = - \left[ {y_i \cdot log P(y_i = 1 \, | \, x_i,w) + (1-y_i) \cdot log (1-P(y_i = 1\, | \, x_i,w))}\right] $$ -->
+![Eqn3](http://latex.codecogs.com/gif.latex?%5Cinline%20l%28x_i%2C%20y_i%2C%20w%29%20%3D%20-%20%5Cleft%5B%20%7By_i%20%5Ccdot%20log%20P%28y_i%20%3D%201%20%5C%2C%20%7C%20%5C%2C%20x_i%2Cw%29%20&plus;%20%281-y_i%29%20%5Ccdot%20log%20%281-P%28y_i%20%3D%201%5C%2C%20%7C%20%5C%2C%20x_i%2Cw%29%29%7D%5Cright%5D)
+
+Loss for many samples: <!-- $$ L(X, \vec{y}, w) =  {1 \over \ell} \sum_{i=1}^\ell l(x_i, y_i, w) $$  -->
+![Eqn4](http://latex.codecogs.com/gif.latex?%5Cinline%20L%28X%2C%20%5Cvec%7By%7D%2C%20w%29%20%3D%20%7B1%20%5Cover%20%5Cell%7D%20%5Csum_%7Bi%3D1%7D%5E%5Cell%20l%28x_i%2C%20y_i%2C%20w%29)
+
 
 
 
