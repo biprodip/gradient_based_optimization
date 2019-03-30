@@ -81,9 +81,9 @@ Momentum is a method that helps accelerate SGD in the relevant direction and dam
 
 Implement RMSPROP algorithm, which use squared gradients to adjust learning rate:
 <br>
-<p style="text-align: center;">
 <!-- $$ G_j^t = \alpha G_j^{t-1} + (1 - \alpha) g_{tj}^2 $$-->
 <!-- $$ w_j^t = w_j^{t-1} - \dfrac{\eta}{\sqrt{G_j^t + \varepsilon}} g_{tj} $$-->
+<p style="text-align: center;">
 
 ![Equation 09](http://latex.codecogs.com/gif.latex?%5Cinline%20G_j%5Et%20%3D%20%5Calpha%20G_j%5E%7Bt-1%7D%20&plus;%20%281%20-%20%5Calpha%29%20g_%7Btj%7D%5E2)
 </p>
